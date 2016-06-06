@@ -12,6 +12,8 @@ It shows how to send a Sigfox message using the airboard with sigfox shield SigB
 
 [Atim SigBee shield](http://www.atim.com/fr/produits/catalogue/modules-shields/sigbeelorabee/)
 
+[Piezo sensor](http://www.meas-spec.com/product/t_product.aspx?id=2478)
+
 Note: The AirBoard has been designed to be wirelessly reprogrammable. The microUSB connector is used for battery charging only. To upload a new program, you will need additional wireless shields such as XBee or BLE and their associated USB dongle, or an external serial connection over FTDI.
 
 ##Installation
@@ -24,10 +26,10 @@ Copy/Past the armapi folder under Arduino/libraries
 
 ##Run the code
 
-- plug the light sensor between the A4 and GND pins
-- repeatedly read the light sensor from analog pin A4
-- send the value to the SIGFOX network every 10 minutes
-  (maximum 140 messages per day)
+- plug the piezo sensor between the A4 and 3.3V pins
+- repeatedly read the sensor from analog pin A4
+- send the value through the SIGFOX network when the target has been hit
+Note that the ETSI limitation allows a maximum of 140 messages per day.
    
 1. upload this program to The AirBoard via the BLE-LINK/XBee shield
 2. replace the BLE-LINK/XBee shield by the SIGFOX shield
