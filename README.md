@@ -24,6 +24,8 @@ Get the Arduino library from [API for ARM modules](http://atim-radiocommunicatio
 
 Copy/Past the armapi folder under Arduino/libraries
 
+Choose the Arduino Fio board
+
 ##Run the code
 
 - plug the piezo sensor between the A4 and 3.3V pins
